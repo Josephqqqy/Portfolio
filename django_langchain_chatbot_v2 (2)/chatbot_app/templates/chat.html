@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>智能客服演示</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px }
+    #chatbox{ width: 700px; border: 1px solid #ddd; padding: 10px; height: 400px; overflow:auto}
+    .user{ text-align: right; color: #111 }
+    .bot{ text-align: left; color: #333 }
+    #input{ width: 600px }
+  </style>
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h2>智能客服（本地测试）- 支持多轮对话</h2>
+    <a href="/sessions/" style="color: #2196F3; text-decoration: none;">📋 查看会话历史</a>
+  </div>
+  <div id="chatbox"></div>
+  <div style="margin-top:10px;">
+    <input id="input" placeholder="请输入...(可发送联系方式如: 手机:13800138000 或 微信:wxid_xxx)">
+    <button id="send">发送</button>
+    <button id="clear" onclick="clearChat()" style="margin-left:10px;">清空对话</button>
+  </div>
+
+<script src="/static/chatbot_app.js"></script>
+</body>
+</html>
